@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style>
+        body{
+            background-color: rgb(177, 176, 176);
+        }
+        main{
+            margin: auto;
+            width: 400px;
+            height: 300px;
+            background-color: #015aff;
+            color: white;
+            border-radius: 10px;
+        }
+        h1{
+            margin: 5px;
+        }
+
+        input{
+            margin: 5px;
+            color: rgb(0, 0, 0);
+            background-color: #ffffff;
+            border-color: black;
+            width: 80px;
+        }
+
+        input#n1,input#n2{
+            padding: 5px;
+            width: 200px;
+            font-weight: bold;
+        }
+
+        div{
+            padding: 5px;
+            color: black;
+            margin: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Somando números</h1>
+        <input type="number" name="n1" id="n1"><br>
+        <input type="number" name="n2" id="n2"><br>
+        <input type="button" value="Somar" onclick="somar()">
+        <input type="button" value="Subtrair" onclick="subt()">
+        <input type="button" value="Dividir" onclick="divisao()">
+        <input type="button" value="Multiplicar" onclick="multi()">
+        <div id="res">Resultado</div>
+    </main>
+
+    <script>
+        var tn1 = window.document.getElementById('n1')
+        var tn2 = window.document.getElementById('n2')
+        var res = window.document.getElementById('res')
+        
+
+        function somar(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+        }
+
+        function subt(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 - n2
+            res.innerHTML = `A subtração entre ${n1} e ${n2} é igual a ${s}`
+        }
+        
+        function divisao(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 / n2
+            res.innerHTML = `A divisao entre ${n1} e ${n2} é igual a ${s}`
+        }
+        
+        function multi(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 * n2
+            res.innerHTML = `A multiplicação entre ${n1} e ${n2} é igual a ${s}`
+        }
+    </script>
+</body>
+</html>
