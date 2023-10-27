@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do dia</title>
+    <title>Contador</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,13 +11,13 @@
         <h1>Vamos contar</h1>
     </header>
     <section>
-        <div>
-            Inicio:<input type="number" name="txtn1" id="txtn1">
-            Fim:<input type="number" name="txtn2" id="txtn2">
-            Passo:<input type="number" name="txtpasso" id="txtpasso">
-            <input type="submit" value="contar">
+        <div id="dados">
+            <p>Inicio:<input type="number" name="txtn1" id="txtn1"></p>
+            <p>Fim:<input type="number" name="txtn2" id="txtn2"></p>
+            <p>Passo:<input type="number" name="txtpasso" id="txtpasso"></p>
+            <input type="button" value="contar" onclick="contar()">
         </div>
-        <div>
+        <div id="res">
             <p>processando a contagem...</p>
         </div>
     </section>
