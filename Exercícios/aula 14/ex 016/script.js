@@ -23,15 +23,15 @@ function contar(){
         if(i < f){
 
             for(var c = i; c <= f ; c += p){//contagem crescente
-                res.innerHTML += ` ${c} \u{1F449}`  
+                res.innerHTML += ` ${c} \u{27A1}`  
             }
         }else{
 
             for(var c = i; c >= f ; c -= p){//contagem decrescente
-                res.innerHTML += ` ${c} \u{1F449}`  
+                res.innerHTML += ` ${c} \u{27A1}`  
             }
             
         }
-        res.innerHTML += `\u{1F44D}`
+        res.innerHTML += `\u{1F6D1}`
     }
 }
