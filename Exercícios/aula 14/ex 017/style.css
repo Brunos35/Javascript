@@ -13,7 +13,7 @@ section{
     background-color: white;
     border-radius: 10px;
     padding: 15px;
-    width: 400px;
+    width: 350px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
 }
@@ -21,6 +21,7 @@ section{
 select{
     background-color: rgba(128, 128, 128, 0.103);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.445);
+    height: 180px;
 }
 
 footer{
