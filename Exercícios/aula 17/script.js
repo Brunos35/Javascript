@@ -57,10 +57,10 @@ function finalizar(){
         }
         media = soma / tot
         res.innerHTML =''
-        res.innerHTML += `<p>Ao todo temos ${tot} número cadastrados</p>`
-        res.innerHTML += `<p>O maior valor informado foi ${maior}</p>`
-        res.innerHTML += `<p>O menor valor informado foi ${menor}</p>`
-        res.innerHTML += `<p>Somando todos os valores temor ${soma}</p>`
+        res.innerHTML += `<p>Ao todo temos ${tot} número(s) cadastrado(s) \u{1F47E}</p>`
+        res.innerHTML += `<p>O maior valor informado foi ${maior} \u{1F973}</p>`
+        res.innerHTML += `<p>O menor valor informado foi ${menor} \u{1F90F}</p>`
+        res.innerHTML += `<p>Somando todos os valores temos ${soma} \u{1F92F}</p>`
 
     }
 
